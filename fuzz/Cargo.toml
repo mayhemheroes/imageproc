@@ -1,0 +1,37 @@
+[package]
+name = "imageproc-fuzz"
+version = "0.1.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+
+[dependencies.imageproc]
+path = "../"
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "arc_length"
+path = "fuzz_targets/arc_length.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "approximate_polygon"
+path = "fuzz_targets/approximate_polygon.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "convex_hull"
+path = "fuzz_targets/convex_hull.rs"
+test = false
+doc = false

@@ -1,0 +1,7 @@
+project: imageproc
+target: convex_hull
+duration: 90
+
+cmds:
+    - cmd: /convex_hull
+

@@ -1,0 +1,7 @@
+project: imageproc
+target: arc_length
+duration: 90
+
+cmds:
+    - cmd: /arc_length
+
