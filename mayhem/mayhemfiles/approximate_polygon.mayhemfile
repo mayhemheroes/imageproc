@@ -1,0 +1,7 @@
+project: imageproc
+target: approximate_polygon
+duration: 90
+
+cmds:
+    - cmd: /approximate_polygon
+
